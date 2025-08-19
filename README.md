@@ -43,4 +43,4 @@ com.danicodes.literalura
 
 ---
 
-Feito com ❤️ para a Dani — bons estudos e boa apresentação! 
+
