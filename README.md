@@ -1,30 +1,4 @@
-# LiterAlura — Catálogo de Livros (Console)
-
-Projeto **pronto para rodar** sem instalar banco de dados (usa **H2 em memória** por padrão). 
-Perfil opcional para **PostgreSQL** incluído.
-
-## ✅ Requisitos
-- **Java 17+** instalado.
-- **Maven** (ou use sua IDE, ex.: IntelliJ -> botão Run).
-
-> Sem necessidade de instalar Postgres: por padrão usa **H2**.
-
-## 🚀 Como executar
-No terminal, dentro da pasta do projeto:
-```bash
-mvn spring-boot:run
-```
-Ou, para gerar fat jar:
-```bash
-mvn -q -DskipTests package
-java -jar target/literalura-1.0.0.jar
-```
-
-### (Opcional) Rodar com PostgreSQL
-Crie um DB `literalura` e ajuste usuário/senha em `src/main/resources/application-postgres.properties`, então:
-```bash
-mvn spring-boot:run -Dspring-boot.run.profiles=postgres
-```
+# LiterAlura — Catálogo de Livros 
 
 ## 🧠 Funcionalidades (menu)
 1. **Buscar livro pelo título (API Gutendex)** e salvar no banco.  
@@ -35,7 +9,7 @@ mvn spring-boot:run -Dspring-boot.run.profiles=postgres
 6. **Top 10 livros por downloads** (com base no que está no banco).  
 0. **Sair**.
 
-> Somente a opção **1** acessa a API; as demais usam apenas o banco.
+> Somente a opção **1** acessa a API; as demais usam apenas o banco.salvo em h2.
 
 ## 🌐 API utilizada
 **Gutendex** — https://gutendex.com/books/  
